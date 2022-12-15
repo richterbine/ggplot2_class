@@ -170,12 +170,12 @@ p5
 
 
 # exportando a figura
-tiff(here::here("data", "mapa_abundancia.tif"), height = 10, width = 17.4, res = 300, units = "cm")
+tiff(here::here("data", "figures", "mapa_abundancia.tif"), height = 10, width = 17.4, res = 300, units = "cm")
 p5
 dev.off()
 
 # outra forma de salvar o plot
-cowplot::save_plot(here::here("data/Mapa2.png"), 
+cowplot::save_plot(here::here("data/figures/Mapa2.png"), 
                    p5,
                    base_height = 6, base_width = 8)
 
